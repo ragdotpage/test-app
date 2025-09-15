@@ -61,6 +61,7 @@ const ArchitectExample = () => {
         group: { id: "test-group-2" },
       },
       mode: "architect",
+      reflectedMessage: "",
       type: "respone",
     },
     {
@@ -71,13 +72,13 @@ const ArchitectExample = () => {
         group: { id: "test-group" },
       },
       mode: "user",
-      type: "respone",
     },
     {
       id: "ec31127e-e4eb-4083-a2b8-1fbe8a717340",
       role: "assistant",
       content:
         "To update a file with the content `hello world, its me`, follow these steps:\n\n1. Choose the target file you want to update.\n2. Open the file in your editor.\n3. Replace the entire contents of the file with:\n   ```\n   hello world, its me\n   ```\n4. Save the file.\n\nIf you want me to provide instructions for a specific file, please specify the filename. If you want to preserve any part of the file, let me know.",
+      reflectedMessage: "",
       usageReport:
         "Tokens: 633 sent, 98 received. Cost: $0.0020 message, $0.0020 session. Total cost: $0.0054680000 session",
       promptContext: {
@@ -85,7 +86,6 @@ const ArchitectExample = () => {
         group: { id: "test-group" },
       },
       mode: "architect",
-      type: "respone",
     },
     {
       id: "599268a9-ac12-44aa-91fc-5a985a283980",
@@ -99,7 +99,7 @@ const ArchitectExample = () => {
         group: { id: "test-group" },
       },
       mode: "code",
-      type: "reflected-message",
+      reflectedMessage: "",
     },
     {
       role: "user",
@@ -109,7 +109,6 @@ const ArchitectExample = () => {
         group: { id: "test-group" },
       },
       mode: "user",
-      type: "respone",
     },
   ];
 
@@ -227,7 +226,7 @@ export function App() {
           </p>
           <APITester />
           <ArchitectExample />
-          <InteractiveParsedContentExample />
+          {/*<InteractiveParsedContentExample />*/}
         </CardContent>
       </Card>
     </div>
