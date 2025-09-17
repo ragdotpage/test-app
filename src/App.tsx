@@ -62,6 +62,7 @@ const ArchitectExample = () => {
       },
       mode: "architect",
       reflectedMessage: "",
+      type: "respone",
     },
     {
       role: "user",
